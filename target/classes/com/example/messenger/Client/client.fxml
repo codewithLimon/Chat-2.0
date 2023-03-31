@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="com.example.messenger.Client.ClientController"
+            prefHeight="700.0" prefWidth="800.0"
+            xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <Label text="Client Messenger" layoutX="330" layoutY="15" style="-fx-font-family: sans-serif; -fx-font-weight: Bold; -fx-font-size: 15px" ></Label>
+        <ScrollPane fx:id="_scrollBody" layoutY="50" prefWidth="800" prefHeight="600" style="-fx-background-color: black" hbarPolicy="NEVER">
+            <content>
+                <VBox fx:id="_vboxBody" prefWidth="785" prefHeight="600" style="-fx-background-color: #ffffff"/>
+            </content>
+        </ScrollPane>
+        <TextField fx:id="_messageBox" prefWidth="450.0" layoutX="150" layoutY="660"/>
+        <Button fx:id="_sendButton" prefWidth="60.0" layoutX="610" layoutY="660" text="Send" textFill="white" style="-fx-background-color: blue"/>
+    </children>
+</AnchorPane>
